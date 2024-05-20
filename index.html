@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8 ">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+    integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link href="output.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+  <style>
+    /* Custom CSS for the vertical marquee effect */
+    .marquee-container {
+      overflow: hidden;
+      height: calc(100vh - 3.5rem);
+      /* Adjust according to your layout */
+      width: 100%;
+    }
+
+    .marquee-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      /* Adjust the gap between items */
+      animation: marquee 20s linear infinite;
+      /* Adjust speed (5s here) */
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateY(0);
+      }
+
+      100% {
+        transform: translateY(calc(-100% + 3.5rem));
+        /* Adjust to fit the content height */
+      }
+    }
+
+    .vertical-text {
+      writing-mode: vertical-rl;
+      /* Vertical writing mode */
+      text-orientation: mixed;
+      /* Ensures text is upright */
+      white-space: nowrap;
+      /* Prevents text from wrapping */
+    }
+  </style>
+</head>
+
+<body class="flex overflow-y-hidden ">
+  <div class="LEFT bg-custom-LEFT w-3/4 min-h-screen p-4 relative">
+    <div class="LOGO flex text-yellow-400 ">
+      <i class="fa-solid fa-fan text-6xl pr-2"></i>
+      <div class=" font-extrabold text-6xl">Astrix.</div>
+    </div>
+
+
+    <div class="SHADOW-BODY text-9xl font-extrabold mt-10 text-stone-700">
+      <div>ASTR</div>
+      <div>IS</div>
+      <br>
+      <div>EVE</div>
+      <div>NTS</div>
+    </div>
+
+
+
+    <div class="slider-container overflow-hidden" style="position: relative; top: -380px;">
+      <div class="flex transition-transform duration-500 ease-in-out transform" id="slider">
+          <div class="flex-shrink-0 w-1/4">
+              <img src="./images/im2.png" alt="Image 1" id="img-slider" >
+          </div>
+          <div class="flex-shrink-0 w-1/4">
+              <img src="./images/img1.png" alt="Image 2" id="img-slider">
+          </div>
+          <div class="flex-shrink-0 w-1/4">
+              <img src="./images/im2.png" alt="Image 3" id="img-slider">
+          </div>
+          <div class="flex-shrink-0 w-1/4">
+              <img src="./images/img1.png" alt="Image 4" id="img-slider">
+          </div>
+          <div class="flex-shrink-0 w-1/4">
+              <img src="./images/im2.png" alt="Image 5" id="img-slider">
+          </div>
+          <div class="flex-shrink-0 w-1/4">
+              <img src="./images/img1.png" alt="Image 6" id="img-slider">
+          </div>
+          <div class="flex-shrink-0 w-1/4">
+            <img src="./images/im2.png" alt="Image 5" id="img-slider">
+        </div>
+        <div class="flex-shrink-0 w-1/4">
+            <img src="./images/img1.png" alt="Image 6" id="img-slider">
+        </div>
+        <div class="flex-shrink-0 w-1/4">
+          <img src="./images/im2.png" alt="Image 5" id="img-slider">
+      </div>
+      <div class="flex-shrink-0 w-1/4">
+          <img src="./images/img1.png" alt="Image 6" id="img-slider">
+      </div>
+      </div>
+
+      <!-- Navigation buttons -->
+      <button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2" id="prev">
+          &lt;
+      </button>
+      <button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2" id="next">
+          &gt;
+      </button>
+
+      <div class="button-container mt-10 ml-10">
+        <button class="tab-button active">Events</button>
+        <button class="tab-button">Collections</button>
+      </div>
+  </div>
+    
+
+  </div>
+  <div class="LEFT bg-custom-MIDDLE  min-h-screen">
+    <div class="marquee-content">
+
+      <p class="vertical-text p-8 text-center text-5xl ">Lorem ipsum dolor **, sit amet consectetur adipisicing elit.
+        Quod voluptatem autem enim doloremque debitis aspernatur, repellendus veniam delectus soluta voluptatum.
+        Corporis aperiam incidunt pariatur laborum iusto similique unde, a voluptates.</p>
+
+      <!-- Add more lines as needed -->
+    </div>
+  </div>
+
+  <div class="RIGHT bg-custom-RIGHT w-1/4 min-h-screen text-4xl text-white pl-10 pt-8 font-extrabold">
+    <div>Explore Youre First</div>
+
+    <div>Event</div>
+    <div class="mt-10">
+      <div class="text-6xl">Event Name</div>
+      <div class="mt-4 mb-6 text-xl">
+        <!-- <i class="fa-solid fa-location-crosshairs mr-1"></i> -->
+        <i class="fa-solid fa-location-dot mr-1"></i>
+        Venue
+        <i class="fa-regular fa-clock mr-1 ml-4"></i>
+        04/3/24
+        <i class="fa-solid fa-at mr-1 ml-4"></i>
+        7 PM
+      </div>
+      <div class="text-lg">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aspernatur ab dicta qua
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum cumque veniam commodi sapiente blanditiis
+        perferendis fugiat iure inventore repellat. Provident lauda
+      </div>
+      <div class="mt-10">
+        Artist Lineup
+      </div>
+      <div class="PICS LINEUP flex pt-16">
+        <img class="events-img" src="./images/cover1" alt="" srcset="">
+        <img class="events-img" style="height: 130px;" src="./images/cover2" alt="" srcset="">
+        <img class="events-img" src="./images/cover3.webp" alt="" srcset="">
+
+      </div>
+
+      <div class="mt-20 flex-IMG">
+        <img src="./images/QR.png" alt="QR Image">
+        <button class="join-button">Join Waitlist</button>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script>
+    const slider = document.getElementById('slider');
+    const prev = document.getElementById('prev');
+    const next = document.getElementById('next');
+    let currentIndex = 0;
+
+    function updateSlider() {
+        slider.style.transform = `translateX(-${currentIndex * 100 / 3}%)`;
+    }
+
+    next.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % (slider.children.length - 2);
+        updateSlider();
+    });
+
+    prev.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + slider.children.length - 2) % (slider.children.length - 2);
+        updateSlider();
+    });
+
+    // Auto slide functionality
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % (slider.children.length - 2);
+        updateSlider();
+    }, 1000); // Change slide every 1 second (1000 milliseconds)
+</script>
+</body>
+
+</html>
